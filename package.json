@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --emptyOutDir"
+    "build": "vite build --emptyOutDir",
+    "netlify-build": "vite build --emptyOutDir && echo '/* /index.html 200' | cat >build/_redirects"
   },
   "author": "",
   "license": "ISC",
